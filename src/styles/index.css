@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  themes: sauvonsdesvies --default;
+}
+
+@import "./theme.css";

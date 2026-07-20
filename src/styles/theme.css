@@ -1,0 +1,60 @@
+/**
+ * Thème DaisyUI personnalisé — Sauvons Des-Vies
+ *
+ * Palette issue du logo officiel et des fiches coordinateurs :
+ * - Vert  : couleur institutionnelle dominante (header, CTA principal)
+ * - Or    : accent secondaire (mise en valeur, boutons secondaires)
+ * - Rouge : accent (badges, alertes, éléments d'action forte)
+ * - Vert très foncé : fond "neutral" (bandeaux sombres, footer)
+ *
+ * Chaque valeur ci-dessous correspond à une classe DaisyUI que les
+ * composants utilisent déjà (bg-primary, text-secondary, badge-accent...).
+ * Modifier une couleur ici la change partout sur le site, sans toucher
+ * à un seul composant.
+ */
+
+@plugin "daisyui/theme" {
+  name: "sauvonsdesvies";
+  default: true;
+  color-scheme: light;
+
+  /* Fond et texte de base */
+  --color-base-100: oklch(100% 0 0);      /* blanc */
+  --color-base-200: oklch(97% 0.01 150);  /* gris très clair, légèrement vert */
+  --color-base-300: oklch(92% 0.01 150);  /* gris clair pour les bordures */
+  --color-base-content: oklch(20% 0 0);   /* texte principal, quasi noir */
+
+  /* Vert institutionnel — couleur dominante */
+  --color-primary: #1F7A3D;
+  --color-primary-content: #FFFFFF;
+
+  /* Or — accent secondaire */
+  --color-secondary: #F5C542;
+  --color-secondary-content: #3D2E00;
+
+  /* Rouge — accent fort */
+  --color-accent: #CE1126;
+  --color-accent-content: #FFFFFF;
+
+  /* Vert très foncé — fonds sombres (bandeaux, footer) */
+  --color-neutral: #0F2A1A;
+  --color-neutral-content: #FFFFFF;
+
+  /* États système, alignés sur la palette de marque plutôt que
+     sur les couleurs par défaut de DaisyUI */
+  --color-info: #2563EB;
+  --color-info-content: #FFFFFF;
+  --color-success: #1F7A3D;
+  --color-success-content: #FFFFFF;
+  --color-warning: #F5C542;
+  --color-warning-content: #3D2E00;
+  --color-error: #CE1126;
+  --color-error-content: #FFFFFF;
+
+  /* Arrondis — cohérents avec les maquettes déjà validées */
+  --radius-selector: 0.5rem;  /* boutons, badges */
+  --radius-field: 0.5rem;     /* champs de formulaire */
+  --radius-box: 0.75rem;      /* cartes, conteneurs */
+
+  --border: 1px;
+}
