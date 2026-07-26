@@ -20,7 +20,7 @@ export default function Navbar() {
       {/* Logo */}
       <div className="flex items-center gap-2">
         <div className="w-6 h-6 rounded-full bg-primary" />
-        <span className="font-medium">Sauvons Des-Vies</span>
+        <span className="font-bold text-2xl">Sauvons Des-Vies</span>
       </div>
 
       {/* Liens centrés */}
@@ -29,7 +29,7 @@ export default function Navbar() {
           <li key={item.id}>
             
               <a href={item.href}
-              className={activeSection === item.id ? "active text-primary" : ""}
+              className={activeSection === item.id ? "active text-primary font-bold"  : "" }
             >
               {item.label}
             </a>

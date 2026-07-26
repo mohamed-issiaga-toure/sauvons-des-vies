@@ -1,5 +1,4 @@
 import type { ReactNode } from "react";
-
 interface HeroSectionProps {
   imageUrl: string;
   eyebrow?: string;
@@ -26,12 +25,12 @@ export default function HeroSection({
       <div className="hero-content text-center text-primary-content">
         <div className="max-w-xl">
           {eyebrow && (
-            <p className="text-xs tracking-widest uppercase text-secondary mb-3">
+            <p className="text-xs font-bold tracking-widest uppercase text-secondary mb-3">
               {eyebrow}
             </p>
           )}
 
-          <h1 className="text-3xl font-medium mb-4">{title}</h1>
+          <h1 className="text-3xl font-bold mb-4">{title}</h1>
 
           {text && <p className="text-sm opacity-90 mb-6">{text}</p>}
 
