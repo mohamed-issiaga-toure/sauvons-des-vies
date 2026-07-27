@@ -3,7 +3,12 @@
  * Sections utilisées : HeroSection, CoordinatorsFullGrid.
  */
 
+import CoordinatorsGrid from "../components/sections/CoordinatorsGrid"
 export default function Coordinators() {
-  // TODO : à implémenter ensemble
-  return null;
+  return (
+    <div>
+      <CoordinatorsGrid />
+    </div>
+  )
 }
+

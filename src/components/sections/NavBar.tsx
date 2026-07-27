@@ -1,5 +1,5 @@
 import { useState } from "react";
-import  useScrollSpy  from "../../hooks/useScrollSpy";
+import { Link, NavLink } from "react-router-dom";
 import { navItems } from "../../data/navigation";
 import Button from "../atoms/Button";
 
@@ -12,27 +12,26 @@ import Button from "../atoms/Button";
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const sectionIds = navItems.map((item) => item.id);
-  const activeSection = useScrollSpy(sectionIds);
-
   return (
     <div className="grid grid-cols-[1fr_auto_1fr] sticky top-0 z-50 items-center bg-base-100 border-b border-base-300 px-6 py-3">
-      {/* Logo */}
-      <div className="flex items-center gap-2">
+      {/* Logo cliquable */}
+      <Link to="/" className="flex items-center gap-2 w-fit">
         <div className="w-6 h-6 rounded-full bg-primary" />
         <span className="font-bold text-2xl">Sauvons Des-Vies</span>
-      </div>
+      </Link>
 
       {/* Liens centrés */}
       <ul className="menu font-bold menu-horizontal hidden md:flex gap-1">
         {navItems.map((item) => (
           <li key={item.id}>
-            
-              <a href={item.href}
-              className={activeSection === item.id ? "active text-primary font-bold"  : "" }
+            <NavLink
+              to={item.href}
+              className={({ isActive }) =>
+                isActive ? "active text-primary font-bold" : ""
+              }
             >
               {item.label}
-            </a>
+            </NavLink>
           </li>
         ))}
       </ul>
@@ -40,9 +39,11 @@ export default function Navbar() {
       {/* CTA don + hamburger mobile */}
       <div className="flex items-center justify-end gap-2">
         <div className="hidden md:block">
-          <Button variant="primary" size="md"  children="Faire un don" />
-           
-         
+          <Link to="/contact">
+            <Button variant="primary" size="md">
+              Faire un don
+            </Button>
+          </Link>
         </div>
 
         <button
@@ -56,22 +57,26 @@ export default function Navbar() {
 
       {/* Menu mobile */}
       {isMenuOpen && (
-        <ul className="menu bg-base-100 border-b border-base-300 absolute top-full left-0 w-full md:hidden z-10 col-span-3">
+        <ul className="menu bg-base-100 border-b border-base-300 absolute top-full left-0 w-full md:hidden z-10 col-span-3 p-4 gap-2">
           {navItems.map((item) => (
             <li key={item.id}>
-              
-               <a  href={item.href}
-                className={activeSection === item.id ? "active text-primary" : ""}
+              <NavLink
+                to={item.href}
+                className={({ isActive }) =>
+                  isActive ? "active text-primary font-bold" : ""
+                }
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.label}
-              </a>
+              </NavLink>
             </li>
           ))}
-          <li>
-            <Button variant="primary" size="md" >
-              Faire un don
-            </Button>
+          <li className="pt-2">
+            <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
+              <Button variant="primary" size="md">
+                Faire un don
+              </Button>
+            </Link>
           </li>
         </ul>
       )}

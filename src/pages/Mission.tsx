@@ -3,7 +3,12 @@
  * Sections utilisées : HeroSection, bloc texte histoire/valeurs, MapGuinea.
  */
 
+import MissionSection from "../components/sections/MissionSection"
 export default function Mission() {
-  // TODO : à implémenter ensemble
-  return null;
+  return (
+    <div>
+      <MissionSection />
+    </div>
+  )
 }
+

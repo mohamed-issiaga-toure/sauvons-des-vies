@@ -3,7 +3,17 @@
  * Sections utilisées : HeroSection, ActionsGrid (détaillée), TestimonialsCarousel.
  */
 
+import ActionsGrid from "../components/sections/ActionsGrid";
+import PartnersSection from "../components/sections/PartnersSection";
+
+
 export default function Actions() {
-  // TODO : à implémenter ensemble
-  return null;
+  return (
+    <div>
+      <ActionsGrid />
+      <PartnersSection />
+
+
+    </div>
+  )
 }

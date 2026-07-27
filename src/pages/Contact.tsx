@@ -1,9 +1,13 @@
-/**
- * Contact — page de contact générale.
- * Sections utilisées : HeroSection, ContactForm (subject="contact"), coordonnées.
- */
+import ContactSection from "../components/ContactSection";
+import  TestimonialsSection from "../components/sections/TestimonialsSection";
+
 
 export default function Contact() {
-  // TODO : à implémenter ensemble
-  return null;
+  return (
+  <div>
+     <ContactSection />
+  <TestimonialsSection />
+  </div>
+
+  )
 }

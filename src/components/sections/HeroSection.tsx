@@ -20,6 +20,7 @@ export default function HeroSection({
       className="hero min-h-[80vh]"
       style={{ backgroundImage: `url(${imageUrl})` }}
     >
+      
       <div className="hero-overlay bg-neutral/70" />
 
       <div className="hero-content text-center text-primary-content">

@@ -10,7 +10,7 @@ export default function About() {
           {aboutContent.eyebrow}
         </p>
         <h2 className="text-2xl font-medium mb-4">{aboutContent.title}</h2>
-        <p className="text-sm text-base-content/70">{aboutContent.paragraph}</p>
+        <p className="text-sm text-base-content/70 leading-relaxed">{aboutContent.paragraph}</p>
       </div>
     </div>
   );

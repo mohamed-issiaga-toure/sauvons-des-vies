@@ -17,7 +17,8 @@ export default function MissionSection() {
             {missionContent.eyebrow}
           </p>
           <h2 className="text-2xl font-medium mb-4">{missionContent.title}</h2>
-          <p className="text-sm text-base-content/70">{missionContent.story}</p>
+
+          <p className="text-sm text-base-content/70 leading-loose">{missionContent.story}</p>
         </div>
 
         <div className="flex flex-col divide-y divide-base-300">

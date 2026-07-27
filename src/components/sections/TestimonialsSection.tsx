@@ -20,7 +20,7 @@ export default function TestimonialsSection() {
   };
 
   return (
-    <section className="py-16 px-6 bg-neutral text-neutral-content">
+    <section className="py-16 px-6 bg-indigo-200 text-neutral-content">
       <div className="max-w-xl mx-auto text-center">
         <Icon name="Quote" size={28} className="text-secondary mx-auto mb-4" />
 
