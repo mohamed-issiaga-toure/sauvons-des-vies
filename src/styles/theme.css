@@ -1,16 +1,19 @@
 /**
  * Thème DaisyUI personnalisé — Sauvons Des-Vies
  *
- * Palette issue du logo officiel et des fiches coordinateurs :
- * - Vert  : couleur institutionnelle dominante (header, CTA principal)
- * - Or    : accent secondaire (mise en valeur, boutons secondaires)
- * - Rouge : accent (badges, alertes, éléments d'action forte)
- * - Vert très foncé : fond "neutral" (bandeaux sombres, footer)
+ * ⚠️ Les noms de variables ci-dessous (--color-base-100, --color-primary...)
+ * sont IMPOSÉS par DaisyUI — c'est lui qui les lit pour générer les classes
+ * qu'on utilise partout (bg-primary, bg-base-100...). Impossible de les
+ * renommer sans casser tout le thème. Voici la légende en langage clair :
  *
- * Chaque valeur ci-dessous correspond à une classe DaisyUI que les
- * composants utilisent déjà (bg-primary, text-secondary, badge-accent...).
- * Modifier une couleur ici la change partout sur le site, sans toucher
- * à un seul composant.
+ *   --color-base-100      → fond des PAGES/sections (bg-base-100)
+ *   --color-base-200      → fond des CARTES (bg-base-200)
+ *   --color-base-300      → bordures / séparateurs (border-base-300)
+ *   --color-base-content  → texte principal (text-base-content)
+ *   --color-primary       → vert institutionnel (bg-primary, btn-primary)
+ *   --color-secondary     → or / doré (bg-secondary, btn-secondary)
+ *   --color-accent        → rouge (bg-accent, badge-accent)
+ *   --color-neutral       → fond SOMBRE : Hero, Footer (bg-neutral)
  */
 
 @plugin "daisyui/theme" {
@@ -18,43 +21,47 @@
   default: true;
   color-scheme: light;
 
-  /* Fond et texte de base */
-  --color-base-100: oklch(100% 0 0);      /* blanc */
-  --color-base-200: oklch(97% 0.01 150);  /* gris très clair, légèrement vert */
-  --color-base-300: oklch(92% 0.01 150);  /* gris clair pour les bordures */
-  --color-base-content: oklch(20% 0 0);   /* texte principal, quasi noir */
+  --color-base-100: #0D2B2E;
+  --color-base-200: #FFFFFF;
+  --color-base-300: #E7DCC0;
+  --color-base-content: #1C1C1A;
 
-  /* Vert institutionnel — couleur dominante */
   --color-primary: #1F7A3D;
   --color-primary-content: #FFFFFF;
 
-  /* Or — accent secondaire */
-  --color-secondary: #F5C542;
-  --color-secondary-content: #3D2E00;
+  --color-secondary: #F5A623;
+  --color-secondary-content: #3D2600;
 
-  /* Rouge — accent fort */
   --color-accent: #CE1126;
   --color-accent-content: #FFFFFF;
 
-  /* Vert très foncé — fonds sombres (bandeaux, footer) */
-  --color-neutral: #0F2A1A;
-  --color-neutral-content: #FFFFFF;
+  --color-neutral: #0D2B2E;
+  --color-neutral-content: #F5F2E9;
 
-  /* États système, alignés sur la palette de marque plutôt que
-     sur les couleurs par défaut de DaisyUI */
   --color-info: #2563EB;
   --color-info-content: #FFFFFF;
   --color-success: #1F7A3D;
   --color-success-content: #FFFFFF;
-  --color-warning: #F5C542;
-  --color-warning-content: #3D2E00;
+  --color-warning: #F5A623;
+  --color-warning-content: #3D2600;
   --color-error: #CE1126;
   --color-error-content: #FFFFFF;
+  --radius-selector: 1rem;
+  --radius-field: 10px;
+  --radius-box: 0.5rem;
 
-  /* Arrondis — cohérents avec les maquettes déjà validées */
-  --radius-selector: 0.5rem;  /* boutons, badges */
-  --radius-field: 0.5rem;     /* champs de formulaire */
-  --radius-box: 0.75rem;      /* cartes, conteneurs */
+  --border: 0;
+}
 
-  --border: 1px;
+/**
+ * Variables MAISON (pas lues par DaisyUI) — celles-ci, on les nomme
+ * librement puisqu'on les invente nous-mêmes. Utilisation :
+ * className="bg-[var(--color-bg-temoignages)]"
+ */
+:root {
+  --color-bg-temoignages: #123C3F;
+  /* fond section Témoignages */
+    --color-text-principal: #F5F2E9;
+  --color-bg-section-alt: #F5EEDC;
+  /* fond alterné : Mission, Coordinateurs */
 }

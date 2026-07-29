@@ -10,7 +10,7 @@ import FadeIn from "../atoms/FadeIn";
 
 export default function MissionSection() {
   return (
-    <section id="mission" className="py-16 px-6 bg-base-200">
+    <section id="mission" className="py-16 px-6 bg-base-300">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-15 max-w-5xl mx-auto items-center">
         <div>
           <p className="text-xs tracking-widest uppercase text-secondary mb-2">
@@ -21,10 +21,10 @@ export default function MissionSection() {
           <p className="text-sm text-base-content/70 leading-loose">{missionContent.story}</p>
         </div>
 
-        <div className="flex flex-col divide-y divide-base-300">
+        <div className="flex flex-col divide-y divide-base-300 ">
           {missionContent.values.map((value, index) => (
             <FadeIn key={value.id} delay={index * 0.08}>
-              <div className="flex items-start gap-3 py-4">
+              <div className="flex items-start gap-3 py-4 hover:scale-105 transition-transform duration-300">
                 <Icon name={value.icon} size={20} className="text-accent shrink-0 mt-0.5" />
                 <div>
                   <p className="text-sm font-medium">{value.title}</p>

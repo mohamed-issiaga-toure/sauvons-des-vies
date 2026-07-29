@@ -5,7 +5,7 @@ import type { Executive } from "../../data/executives";
 
 export default function ExecutivesSection() {
   return (
-    <section id="a-propos" className="py-16 px-6">
+    <section id="a-propos" className="py-16 px-6 bg-base-300">
       <div className="max-w-2xl mx-auto text-center mb-10">
         <p className="text-xs tracking-widest uppercase text-secondary mb-2">
           À propos

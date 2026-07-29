@@ -9,11 +9,11 @@ import Button from "../atoms/Button";
  * réel des liens, peu importe la largeur du logo ou du bouton.
  */
 
-export default function Navbar() {
+export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="grid grid-cols-[1fr_auto_1fr] sticky top-0 z-50 items-center bg-base-100 border-b border-base-300 px-6 py-3">
+    <div className="grid grid-cols-[1fr_auto_1fr] sticky top-0 z-50 items-center text-neutral-content bg-base-100 border-b border-base-300 px-6 py-3">
       {/* Logo cliquable */}
       <Link to="/" className="flex items-center gap-2 w-fit">
         <div className="w-6 h-6 rounded-full bg-primary" />

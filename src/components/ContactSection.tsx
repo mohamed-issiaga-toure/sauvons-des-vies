@@ -36,7 +36,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-15 px-2">
+    <section id="contact" className="py-15 px-2 bg-base-300">
       <div className="grid grid-cols-1  md:grid-cols-[3fr_7fr] gap-20 max-w-6xl justify-around mx-auto items-center ">
         <div>
           <p className="text-xs tracking-widest uppercase text-secondary mb-2">
@@ -49,9 +49,9 @@ export default function ContactSection() {
           <p className="text-sm">{siteConfig.phone}</p>
         </div>
 
-        <form onSubmit={handleSubmit} className="flex flex-col gap-6 border border-primary rounded-2xl p-6 ">
+        <form onSubmit={handleSubmit} className="flex flex-col gap-6 border border-primary  rounded-2xl p-6 ">
   {/* Niveau 1 : les 2 colonnes, côte à côte, chacune exactement 50% */}
-  <div className="flex flex-col md:flex-row gap-4">
+  <div className="flex flex-col md:flex-row gap-4 bg-base-300">
     <div className="flex flex-col gap-4 flex-1">
       <label className="form-control w-full">
         <span className="label-text text-sm mb-1">Nom complet</span>

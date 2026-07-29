@@ -2,6 +2,7 @@ import HeroSection from "../components/sections/HeroSection";
 import Button from "../components/atoms/Button";
 import About from "../components/sections/About";
 import { heroContent } from "../data/home";
+import StatsSection from "../components/sections/StatsSection";
 
 export default function Home() {
   return (
@@ -28,7 +29,9 @@ export default function Home() {
 
         }
       />
+      <StatsSection />
       <About />
+      
       
 
 

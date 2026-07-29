@@ -7,8 +7,8 @@ import FadeIn from "../atoms/FadeIn";
 
 export default function ActionsGrid() {
   return (
-    <section id="actions" className="py-16 px-6">
-      <div className="max-w-2xl mx-auto text-center mb-10">
+    <section id="actions" className="py-16 px-6 bg-base-300">
+      <div className="max-w-2xl mx-auto text-center mb-10 ">
         <p className="text-xs tracking-widest uppercase text-secondary mb-2">
           Ce que nous faisons
         </p>

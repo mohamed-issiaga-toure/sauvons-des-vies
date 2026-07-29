@@ -8,7 +8,7 @@ import { partners } from "../../data/partners";
 
 export default function PartnersSection() {
   return (
-    <section className="py-12 px-6 border-y border-base-300">
+    <section className="py-25 px-6 border-y border-base-300 bg-base-200">
       <p className="text-center text-xs tracking-widest uppercase text-base-content/50 mb-6">
         Nos partenaires
       </p>

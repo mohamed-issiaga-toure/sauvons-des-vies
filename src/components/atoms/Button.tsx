@@ -52,6 +52,7 @@ const sizeClasses: Record<ButtonSize, string> = {
   md: "btn-md", 
   lg: "btn-lg",
   xl: "btn-xl",
+  
 };
 
 export default function Button({

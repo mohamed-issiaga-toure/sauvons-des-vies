@@ -33,7 +33,7 @@ export default function CoordinatorsGrid() {
   const totalPages = Math.max(1, Math.ceil(filtered.length / ITEMS_PER_PAGE));
 
   return (
-    <section id="coordinateurs" className="py-16 px-6">
+    <section id="coordinateurs" className="py-16 px-6 bg-base-300">
       <div className="max-w-2xl mx-auto text-center mb-8">
         <p className="text-xs tracking-widest uppercase text-secondary mb-2">
           Nos coordinateurs
@@ -46,13 +46,13 @@ export default function CoordinatorsGrid() {
         </p>
       </div>
 
-      <div className="max-w-sm mx-auto mb-8">
+      <div className="max-w-sm mx-auto mb-8 ">
         <input
           type="text"
           value={search}
           onChange={handleChange}
           placeholder="Rechercher une préfecture..."
-          className="input input-bordered w-full rounded-fulls"
+          className="input input-bordered w-full rounded-full bg-base-300"
         />
       </div>
 

@@ -6,14 +6,14 @@
  */
 
 export interface Partner {
-  id: string;
+  id: number;
   name: string;
   logoUrl?: string;
 }
 
 export const partners: Partner[] = [
-  { id: "partenaire-1", name: "Partenaire à venir" },
-  { id: "partenaire-2", name: "Partenaire à venir" },
-  { id: "partenaire-3", name: "Partenaire à venir" },
-  { id: "partenaire-4", name: "Partenaire à venir" },
+  { id: 1, name: "La Cité des apprentis" },
+  { id: 2, name: "Pus Touré" },
+  { id: 3, name: "Unicecef" },
+  { id: 4, name: "Partenaire à venir" },
 ];

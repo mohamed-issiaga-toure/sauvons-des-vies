@@ -43,7 +43,7 @@ export const actions: ActionItem[] = [
   {
     id: "action-regionale",
     icon: "MapPin",
-    title: "Ancrage Communautaire à Kankan et Siguiri",
+    title: "Ancrage Communautaire dans les 8 régions administratives",
     description:
       "Déployer des antennes locales et des bureaux permanents dans les zones clés pour agir au plus près des communautés notamment des jeunes.",
   },
