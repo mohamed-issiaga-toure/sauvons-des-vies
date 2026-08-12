@@ -52,7 +52,7 @@ export default function CoordinatorsGrid() {
           value={search}
           onChange={handleChange}
           placeholder="Rechercher une préfecture..."
-          className="input input-bordered w-full rounded-full bg-base-300"
+          className="input input-bordered w-full border-accent-content bg-green-100 rounded-radius-field outline-none focus:border-base-300 "
         />
       </div>
 

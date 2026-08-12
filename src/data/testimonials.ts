@@ -21,7 +21,7 @@ export interface Testimonial {
 export const testimonials: Testimonial[] = [
   {
     id: 1,
-    quote:
+    quote: 
       "Grâce aux séances de sensibilisation de l'ONG dans notre établissement, j'ai compris qu'il est possible de réussir ici en Guinée. Ils m'ont orienté vers une formation professionnelle qui a totalement changé ma vision de l'avenir.",
     authorName: "Mamadou Diallo",
     authorRole: "Jeune bénéficiaire (Siguiri)",

@@ -17,7 +17,7 @@ export default function ActionsGrid() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl justify-around items-center mx-auto">
         {actions.map((action, index) => (
-          <FadeIn key={action.id} delay={index * 0.15}>
+          <FadeIn key={action.id} delay={index * 0.20}>
             <ActionCard
               icon={action.icon}
               title={action.title}

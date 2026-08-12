@@ -5,16 +5,16 @@
  */
 
 export interface NavItem {
-  id: string;
+  id: number;
   label: string;
   href: string;
 }
 
 export const navItems: NavItem[] = [
-  { id: "home", label: "Accueil", href: "/" },
-  { id: "mission", label: "Mission", href: "/mission" },
-  { id: "actions", label: "Actions", href: "/actions" },
-  { id: "executifs", label: "Exécutifs", href: "/executifs" },
-  { id: "coordinateurs", label: "Coordinateurs", href: "/coordinators" },
-  { id: "contact", label: "Contact", href: "/contact" },
+  { id: 1, label: "Accueil", href: "/" },
+  { id: 2, label: "Mission", href: "/mission" },
+  { id: 3, label: "Actions", href: "/actions" },
+  { id: 5, label: "Exécutifs", href: "/executifs" },
+  { id: 6, label: "Coordinateurs", href: "/coordinators" },
+  { id: 7, label: "Contact", href: "/contact" },
 ];

@@ -24,7 +24,7 @@ import { useState, useEffect } from 'react'
 
       {
         // threshold: 0.5 = la section doit être visible à 50% minimum
-        threshold: 0.5,
+        threshold: 0.3,
       }
     )
 

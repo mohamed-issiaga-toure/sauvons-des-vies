@@ -23,7 +23,7 @@ export interface MissionContent {
 
 export const missionContent: MissionContent = {
   eyebrow: "Notre mission",
-  title: "Pourquoi nous existons",
+  title: "Pourquoi nous existons?",
   story:
     "L'ONG Sauvons des Vies est née de la volonté commune de jeunes leaders guinéens face à la tragédie récurrente de l'immigration clandestine. Conscient de la perte tragique de nombreuses vies humaines en mer et au cours de traversées périlleuses, notre regroupement s'est donné pour mission prioritaire de redonner de l'espoir et de la confiance en soi à la jeunesse. Nous agissons au cœur des communautés et des milieux scolaires pour sensibiliser aux risques migratoires, tout en plaidant pour l'accès à la formation professionnelle, à l'emploi et au développement local sur l'ensemble du territoire guinéen.",
   values: [

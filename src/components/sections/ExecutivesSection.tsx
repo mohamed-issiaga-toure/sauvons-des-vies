@@ -1,7 +1,6 @@
 import PersonCard from "../molecules/PersonCard";
 import FadeIn from "../atoms/FadeIn";
 import { executives } from "../../data/executives";
-import type { Executive } from "../../data/executives";
 
 export default function ExecutivesSection() {
   return (
@@ -17,7 +16,7 @@ export default function ExecutivesSection() {
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
-        { executives.map((exec: Executive, index: number) => (
+        { executives.map((exec, index: number) => (
           <FadeIn key={exec.id} delay={index * 0.08}>
             <PersonCard
               fullName={exec.fullName}

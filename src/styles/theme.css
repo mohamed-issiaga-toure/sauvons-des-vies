@@ -26,7 +26,7 @@
   --color-base-300: #E7DCC0;
   --color-base-content: #1C1C1A;
 
-  --color-primary: #1F7A3D;
+  --color-primary:#1F7A3D;
   --color-primary-content: #FFFFFF;
 
   --color-secondary: #F5A623;
@@ -40,7 +40,6 @@
 
   --color-info: #2563EB;
   --color-info-content: #FFFFFF;
-  --color-success: #1F7A3D;
   --color-success-content: #FFFFFF;
   --color-warning: #F5A623;
   --color-warning-content: #3D2600;
@@ -59,9 +58,11 @@
  * className="bg-[var(--color-bg-temoignages)]"
  */
 :root {
-  --color-bg-temoignages: #123C3F;
+  --color-dark-card: #0f1a2e;
+  --color-bg-temoignages: #0F6B5C;
   /* fond section Témoignages */
-    --color-text-principal: #F5F2E9;
+    --color-texte-principal: #5C6472;
+    --color-text-secondaire:#6B6355
   --color-bg-section-alt: #F5EEDC;
   /* fond alterné : Mission, Coordinateurs */
 }

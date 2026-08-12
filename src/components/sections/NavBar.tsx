@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { navItems } from "../../data/navigation";
 import Button from "../atoms/Button";
+import logo from "../../assets/Logo/logo.png"
 
 /**
  * Navbar — en-tête du site.
@@ -13,11 +14,20 @@ export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="grid grid-cols-[1fr_auto_1fr] sticky top-0 z-50 items-center text-neutral-content bg-base-100 border-b border-base-300 px-6 py-3">
+    <div className="grid grid-cols-[1fr_auto_1fr] sticky top-0 z-50 items-center text-white bg-base-100 border-b border-base-300 px-6 py-3">
       {/* Logo cliquable */}
-      <Link to="/" className="flex items-center gap-2 w-fit">
-        <div className="w-6 h-6 rounded-full bg-primary" />
-        <span className="font-bold text-2xl">Sauvons Des-Vies</span>
+      <Link to="/" className="flex items-center gap-6 w-fit">
+        <div className=" rounded-full bg-transparent p-1">
+          <img src={logo} alt="" className="w-18 text-2xl h-auto object-cover rounded-full"
+          />
+        </div>
+
+        <h1 className="font-bold text-2xl text-accent">Sauvons  <span 
+         className="font-bold text-2xl text-secondary">
+         Des</span> <span
+          className="font-bold text-2xl text-primary"
+        >Vies</span>
+        </h1>
       </Link>
 
       {/* Liens centrés */}

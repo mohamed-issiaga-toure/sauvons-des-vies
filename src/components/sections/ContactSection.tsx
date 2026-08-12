@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { contactIntro, motifOptions, sexeOptions } from "../data/contact";
-import { siteConfig } from "../data/siteConfig";
-import Button from "./atoms/Button";
+import { contactIntro, motifOptions, sexeOptions } from "../../data/contact"
+import { siteConfig } from "../../data/siteConfig";
+import Button from "../atoms/Button";
 interface ContactFormData {
   fullName: string;
   email: string;
@@ -49,30 +49,30 @@ export default function ContactSection() {
           <p className="text-sm">{siteConfig.phone}</p>
         </div>
 
-        <form onSubmit={handleSubmit} className="flex flex-col gap-6 border border-primary  rounded-2xl p-6 ">
+        <form onSubmit={handleSubmit} className="flex flex-col gap-8  bg-base-200  rounded-2xl p-6 ">
   {/* Niveau 1 : les 2 colonnes, côte à côte, chacune exactement 50% */}
-  <div className="flex flex-col md:flex-row gap-4 bg-base-300">
-    <div className="flex flex-col gap-4 flex-1">
+  <div className="flex flex-col md:flex-row gap-4">
+    <div className="flex flex-col gap-8 flex-1">
       <label className="form-control w-full">
-        <span className="label-text text-sm mb-1">Nom complet</span>
-        <input type="text" name="fullName" value={form.fullName} onChange={handleChange} required className="input input-bordered w-full focus:border-primary focus:outline-primary" />
+        <span className="label-text text-sm mb-1"> Nom</span>
+        <input type="text" name="fullName" value={form.fullName} onChange={handleChange} placeholder="Votre nom complet" required className=" border-b border-secondary outline-none w-full focus:border-primary focus:outline-primary" />
       </label>
 
       <label className="form-control w-full">
         <span className="label-text text-sm mb-1">E-mail</span>
-        <input type="email" name="email" value={form.email} onChange={handleChange} required className="input input-bordered w-full focus:border-primary focus:outline-primary" />
+        <input type="email" name="email" value={form.email} onChange={handleChange} placeholder="Votre adresse mail" required className="border-b border-secondary outline-none w-full focus:border-primary focus:outline-primary" />
       </label>
 
       <label className="form-control w-full">
         <span className="label-text text-sm mb-1">Profession</span>
-        <input type="text" name="profession" value={form.profession} onChange={handleChange} className="input input-bordered w-full focus:border-primary focus:outline-primary" />
+        <input type="text" name="profession" value={form.profession} onChange={handleChange} placeholder="Indiquez votre profession" className="border-b border-secondary outline-none w-full focus:border-primary " />
       </label>
     </div>
 
-    <div className="flex flex-col gap-4 flex-1">
+    <div className="flex flex-col gap-8 flex-1">
       <label className="form-control w-full">
         <span className="label-text text-sm mb-1">Sexe</span>
-        <select name="sexe" value={form.sexe} onChange={handleChange} required className="select select-bordered w-full focus:border-primary focus:outline-primarys">
+        <select name="sexe" value={form.sexe} onChange={handleChange} required className="border-b border-secondary outline-none w-full focus:border-primary focus:outline-primarys">
           <option value="" disabled>Sélectionner</option>
           {sexeOptions.map((option) => (
             <option key={option.value} value={option.value}>{option.label}</option>
@@ -82,7 +82,7 @@ export default function ContactSection() {
 
       <label className="form-control w-full">
         <span className="label-text text-sm mb-1">Motif</span>
-        <select name="motif" value={form.motif} onChange={handleChange} required className="select select-bordered w-full focus:border-primary focus:outline-primary">
+        <select name="motif" value={form.motif} onChange={handleChange} required className="border-b border-secondary outline-none w-full focus:border-primary focus:outline-primary">
           <option value="" disabled>Sélectionner</option>
           {motifOptions.map((option) => (
             <option key={option.value} value={option.value}>{option.label}</option>
@@ -92,7 +92,7 @@ export default function ContactSection() {
 
       <label className="form-control w-full">
         <span className="label-text text-sm mb-1">Message</span>
-        <textarea name="message" value={form.message} onChange={handleChange} required rows={4} className="textarea textarea-bordered w-full focus:border-primary focus:outline-primary" />
+        <textarea name="message" value={form.message} onChange={handleChange} required rows={4} placeholder="Dites nous clairement ce que votre motif" className=" p-2 border border-secondary rounded-lg  outline-none w-full focus:border-primary" />
       </label>
     </div>
   </div>

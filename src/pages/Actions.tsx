@@ -4,14 +4,14 @@
  */
 
 import ActionsGrid from "../components/sections/ActionsGrid";
-import PartnersSection from "../components/sections/PartnersSection";
+import EventsSection from "../components/sections/EventsSection";
 
 
 export default function Actions() {
   return (
     <div>
       <ActionsGrid />
-      <PartnersSection />
+      <EventsSection />
 
 
     </div>

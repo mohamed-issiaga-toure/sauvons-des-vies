@@ -12,15 +12,19 @@ export default function MissionSection() {
   return (
     <section id="mission" className="py-16 px-6 bg-base-300">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-15 max-w-5xl mx-auto items-center">
+
+       <FadeIn delay={0.20}>
         <div>
-          <p className="text-xs tracking-widest uppercase text-secondary mb-2">
+          <p className="text-xs tracking-widest font-bold uppercase text-secondary mb-2">
             {missionContent.eyebrow}
           </p>
-          <h2 className="text-2xl font-medium mb-4">{missionContent.title}</h2>
+          <h2 className="text-2xl font-bold text-base-100 mb-4">{missionContent.title}</h2>
 
           <p className="text-sm text-base-content/70 leading-loose">{missionContent.story}</p>
         </div>
+      </FadeIn>
 
+        <FadeIn delay={0.30}>
         <div className="flex flex-col divide-y divide-base-300 ">
           {missionContent.values.map((value, index) => (
             <FadeIn key={value.id} delay={index * 0.08}>
@@ -34,6 +38,7 @@ export default function MissionSection() {
             </FadeIn>
           ))}
         </div>
+        </FadeIn>
       </div>
     </section>
   );

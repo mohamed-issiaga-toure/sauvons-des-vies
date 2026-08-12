@@ -13,6 +13,6 @@ export const heroContent: HeroContent = {
   eyebrow: "ONG humanitaire · Présente dans les 33 préfectures de Guinée",
   title:
     "Ensemble, redonnons de l'espoir et la confiance en soin à la jeunesse guinéenne",
-  text: "Sauver des vies, préserver la dignité, être présents dans chaque préfecture.",
+  text: "Sauver des vies, préserver la dignité, être présents au côté de la couche juvenille.",
   ctaLabel: "Découvrez nos actions",
 };
