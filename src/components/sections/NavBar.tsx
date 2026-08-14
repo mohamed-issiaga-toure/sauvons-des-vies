@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { navItems } from "../../data/navigation";
 import Button from "../atoms/Button";
-import logo from "../../assets/Logo/logo.png"
+import logo from "../../assets/logo/logo.png"
 
 /**
  * Navbar — en-tête du site.

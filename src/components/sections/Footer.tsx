@@ -6,7 +6,7 @@ import InstagramIcon from "../atoms/InstagramIcon";
 import WhatsAppIcon from "../atoms/WhatsAppIcon";
 import Icon from "../atoms/Icon";
 import FadeIn from "../atoms/FadeIn";
-import logo from "../../assets/Logo/Logo.png"
+import logo from "../../assets/logo/logo.png"
 
 const socialIconMap = {
   facebook: FacebookIcon,
